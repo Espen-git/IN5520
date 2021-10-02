@@ -1,0 +1,63 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\begin{document}
+\title{IN5520 Mandatory project 1}
+\author{Espen Lønes}
+\date{\today}
+\maketitle
+\ \\
+Task A:\\
+\ \\
+Mosaic 1:\\
+Top left:\\
+Homogeneous, course, isotropic texture. The texture looks coarse.\\
+\ \\
+Top right:\\
+Some darker and some lighter areas. Looks like there is a white/light grid across the whole texture. This grid consists of horizontal and vertical lines.\\
+\ \\ 
+Bottom left:\\
+Mostly almost completely white or black. White background with almost vertical black lines. Most lines are at about 110/-70 degrees. The lines are quite thick.\\
+\ \\    
+Bottom right:\\
+Very fine, homogeneous and isotropic.\\
+\newpage
+\ \\
+Mosaic 2:\\
+Top left:\\
+Consists of periodically alternating lines at 45 and -45 degrees.\\
+\ \\
+Top right:\\
+A mosaic of horizontal rectangles. Each rectangle consists of more than one gray level.\\
+\ \\
+Bottom left:\\
+Vertical lines.\\
+\ \\
+Bottom right:\\
+Coarse, homogeneous and isotropic.\\
+\ \\
+\ \\
+Task B:\\
+\ \\
+I chose to do histogram equalization on the sub images to enhance contrast. This makes parts of the textures with similar gray levels to less often fall on the diagonal of the glcm.\\
+\ \\
+I use MATLAB's build in glcm function (graycomatrix). This takes in the parameters $(d, \theta)$ on the form (dy, dx), so i will use this format for the parameters/offset in the report.\\
+\ \\
+\ \\
+\includegraphics[scale=0.4]{"glcm1.png"}
+\ \\
+\includegraphics[scale=0.4]{"glcm2.png"}
+\ \\
+\includegraphics[scale=0.4]{"glcm3.png"}
+\ \\
+\includegraphics[scale=0.4]{"glcm4.png"}
+\ \\
+\includegraphics[scale=0.4]{"glcm5.png"}
+\ \\
+\includegraphics[scale=0.4]{"glcm6.png"}
+\ \\
+\includegraphics[scale=0.4]{"glcm7.png"}
+\ \\
+\includegraphics[scale=0.4]{"glcm8.png"}
+\ \\
+\end{document}
