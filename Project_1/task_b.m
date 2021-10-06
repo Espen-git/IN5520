@@ -33,6 +33,13 @@ for i = 1:8
     %figure, imshow(subimages(:,:,i));
 end
 
+%% Histograms
+figure();
+for i = 1:8
+    subplot(2,4,i), imhist(subimages(:,:,i));
+    title(append('Subimage: ', num2str(i)));
+end
+
 %% Histogram equalized
 subimages_eq = histeq(tl_1);
 for i = 2:8
@@ -52,6 +59,7 @@ flag = hot;
 
 %% Subimage: 1
 figure();
+%m = [6,7,8,9];
 for i = 1:4
     paramaters = i*[0 1; -1 1; -1 0; -1 -1]; % 0, 45, 90 and 135 degrees.
     subplot(2,2,i);
@@ -117,8 +125,9 @@ end
 
 %% Subimage: 6
 figure();
+m = [3,4,5,6]
 for i = 1:4
-    paramaters = i*[0 1; 1 0]; % 0 and 90 degrees.
+    paramaters = m(i)*[0 1; -1 0]; % 0 and 90 degrees.
     subplot(2,2,i);
     glcm6 = graycomatrix(subimages_eq(:,:,6), 'Numlevels', N, 'Offset', paramaters, 'Symmetric', true);
     glcm6 = fix(sum(glcm6, 3) / length(paramaters)); % average of glcm for different offstes
@@ -130,8 +139,9 @@ end
 
 %% Subimage: 7
 figure();
+m = [2,3,4,5]
 for i = 1:4
-    paramaters = i*[0 1]; % 0 degrees.
+    paramaters = m(i)*[0 1]; % 0 degrees.
     subplot(2,2,i);
     glcm7 = graycomatrix(subimages_eq(:,:,7), 'Numlevels', N, 'Offset', paramaters, 'Symmetric', true);
     glcm7 = fix(sum(glcm7, 3) / length(paramaters)); % average of glcm for different offstes

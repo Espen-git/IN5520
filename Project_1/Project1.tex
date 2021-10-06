@@ -11,35 +11,35 @@ Task A:\\
 \ \\
 Mosaic 1:\\
 Top left:\\
-Homogeneous, course, isotropic texture. The texture looks coarse.\\
+Quite course texture, texel 'blobs' of varying size 1-10 pixels across. No distinct direction of texture so isotropic.\\
 \ \\
 Top right:\\
-Some darker and some lighter areas. Looks like there is a white/light grid across the whole texture. This grid consists of horizontal and vertical lines.\\
+Some darker and some lighter areas. More blurry than the others. Looks like there is a white/light grid across the whole texture. This grid consists of thin (2-4 pixel wide) horizontal and vertical lines.\\
 \ \\ 
 Bottom left:\\
-Mostly almost completely white or black. White background with almost vertical black lines. Most lines are at about 110/-70 degrees. The lines are quite thick.\\
+Mostly almost completely white or black. White background with mostly, almost vertical black lines. Most lines are at about 110/-70 degrees. The lines are 1-4 pixels thick.\\
 \ \\    
 Bottom right:\\
-Very fine, homogeneous and isotropic.\\
+Similar to top left, but finer texture (smaller 'blobs'). The 'blobs' here look like a mix of different intensity lines going over each other in all different directions, so isotropic.\\
 \newpage
 \ \\
 Mosaic 2:\\
 Top left:\\
-Consists of periodically alternating lines at 45 and -45 degrees.\\
+Consists of periodically alternating lines at 45 and -45 degrees. The lines are 3-4 pixels wide\\
 \ \\
 Top right:\\
-A mosaic of horizontal rectangles. Each rectangle consists of more than one gray level.\\
+A mosaic of horizontal rectangles. Each rectangle consists of more than one gray level. All the rectangles are the same size 5x19, excluding the dark lines between them.\\
 \ \\
 Bottom left:\\
-Vertical lines.\\
+Vertical lines. With small disjoint horizontal lines across the vertical lines.\\
 \ \\
 Bottom right:\\
-Coarse, homogeneous and isotropic.\\
+Very similar to mosaic 1 top left, course, isotropic, 1-10 pixel wide 'blobs'.\\
 \ \\
 \ \\
 Task B:\\
 \ \\
-I chose to do histogram equalization on the sub images to enhance contrast. This makes parts of the textures with similar gray levels to less often fall on the diagonal of the glcm.\\
+I chose to do histogram equalization on the sub images to enhance contrast. This makes parts of the textures with similar gray levels to less often fall on the diagonal of the glcm. I think this will help create more dissimilar glcms. Since the glcm looks at changes in gray level, and the equalization makes those changes larger.\\
 \ \\
 I use MATLAB's build in glcm function (graycomatrix). This takes in the parameters $(d, \theta)$ on the form (dy, dx), so i will use this format for the parameters/offset in the report.\\
 \ \\
