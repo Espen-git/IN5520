@@ -1,0 +1,32 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage[margin=2cm,nohead]{geometry}
+\graphicspath{ {images/} }
+\begin{document}
+\title{IN5520 Mandatory 2}
+\author{Espen Lønes}
+\date{\today}
+\maketitle
+\ \\
+Task 1)\\
+Plots of the glcms of the 4 textures for each direction:\\
+\includegraphics[scale=0.4]{"task1_d1"}\\
+\includegraphics[scale=0.4]{"task1_d2"}\\
+\includegraphics[scale=0.4]{"task1_d3"}\\
+\includegraphics[scale=0.4]{"task1_d4"}\\
+\ \\
+I don't think one direction will be enough to discriminate between all the textures. Because for all the directions at least two of the textures have very similar glcms.\\
+Therefore i will chose two directions. As for which directions, i think dx=1,dy=0 and dx=0,dy=-1 will give a good chance for differentiating the textures.\\
+Because each pair of textures are different in at least one direction.\\
+(for convenience i will from now on call dx=1,dy=0 for d1. And dx=0,dy=-1 for d2)\\
+e.g. texture 1 and 4 are different in both d1 and d2. But texture 1 and 2 are different in d1 but quite similar in d2.\\
+Also texture 2 and 3 are quite different from themselves when comparing d1 and d2.\\
+These differences between d1 and d2 should give us a lot of good information to give the classifier.\\
+\ \\
+\ \\
+Task 2)\\
+\ \\
+
+\end{document}
