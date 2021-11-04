@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.2.4)  26 OCT 2021 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.2.4)  4 NOV 2021 10:27
 entering extended mode
 **./IN5520_project_2.tex
 (IN5520_project_2.tex
@@ -235,28 +235,63 @@ File: images/task1_d4.png Graphic file (type png)
 <use images/task1_d4.png>
 Package pdftex.def Info: images/task1_d4.png  used on input line 18.
 (pdftex.def)             Requested size: 421.56754pt x 316.17564pt.
+<images/task3_quadrants.png, id=5, 1053.9375pt x 790.45313pt>
+File: images/task3_quadrants.png Graphic file (type png)
+<use images/task3_quadrants.png>
+Package pdftex.def Info: images/task3_quadrants.png  used on input line 49.
+(pdftex.def)             Requested size: 526.96747pt x 395.22559pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--31
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--31
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--31
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
+
+ []
+
+
+Overfull \hbox (26.48347pt too wide) in paragraph at lines 12--50
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--50
 
  []
 
@@ -269,23 +304,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 sk1_d1.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./images/task1_d2.png (PNG copy)> <./images/task1_d3.png (PNG copy)>] [3 <
-./images/task1_d4.png (PNG copy)>] (IN5520_project_2.aux) ) 
+ [2 <./images/task1_d2.png (PNG copy)> <./images/task1_d3.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./images/task1_d4.png (PNG copy)>] [4 <./images/task3_quadrants.png (PNG c
+opy)>]
+(IN5520_project_2.aux) ) 
 Here is how much of TeX's memory you used:
- 2114 strings out of 492484
- 31853 string characters out of 3121602
- 100488 words of memory out of 3000000
- 6444 multiletter control sequences out of 15000+200000
+ 2121 strings out of 492484
+ 32035 string characters out of 3121602
+ 103488 words of memory out of 3000000
+ 6450 multiletter control sequences out of 15000+200000
  6836 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,6n,34p,308b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/espen/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
-s/espen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb>
-Output written on IN5520_project_2.pdf (3 pages, 365689 bytes).
+<C:/Users/espen/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/espen/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on IN5520_project_2.pdf (4 pages, 668345 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 28 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

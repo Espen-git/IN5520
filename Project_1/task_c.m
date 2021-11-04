@@ -1,4 +1,5 @@
 %% Import pictures
+clear all;
 mosaic1 = imread('mosaic1.png');
 mosaic2 = imread('mosaic2.png');
 

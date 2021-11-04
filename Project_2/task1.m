@@ -1,14 +1,14 @@
 %% Load data
-clear all;
-files = dir('oblig2-matlab\*.mat');
-folder_name = 'oblig2-matlab\';
-for i=1:length(files)
-    load(append('oblig2-matlab\', string(files(i).name)));
-end
+load_data
 
-%%
+%% Show pictures
+close all;
 figure;
 imshow(mosaic1_train,[]);
+figure;
+imshow(mosaic2_test,[]);
+figure;
+imshow(mosaic3_test,[]);
 
 %% Plot glcms
 close all;
