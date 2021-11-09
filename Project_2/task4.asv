@@ -14,22 +14,25 @@ imshow(tmp, [])
 
 %% Create covatiance matrices
 % d1 Q1; d1 Q2; d1 Q4
-[class_1_row, class_1_col] = find(training_mask==1);
-[class_2_row, class_2_col] = find(training_mask==2);
-[class_3_row, class_3_col] = find(training_mask==3);
-[class_4_row, class_4_col] = find(training_mask==4);
+%[class_1_row, class_1_col] = find(training_mask==1);
+%[class_2_row, class_2_col] = find(training_mask==2);
+%[class_3_row, class_3_col] = find(training_mask==3);
+%[class_1_row, class_4_col] = find(training_mask==4);
+
+class_indexes = [class_1_row class_1_col; ]
 
 quadrant_images(1,:) = quadrants_mosaic1(1,:,1); % d1 Q1
 quadrant_images(2,:) = quadrants_mosaic1(1,:,2); % d1 Q2 
 quadrant_images(3,:) = quadrants_mosaic1(1,:,4); % d1 Q4
 
-for i = 1:3
+[r,c] = size(quadrant_images);
+for i = 1:r
     quadrant_image = quadrant_images(i,:);
     quadrant_image = uint8(255 * mat2gray(quadrant_image));
     quadrant_image = reshape(quadrant_image, [512, 512]).'; % transpose because reshape creates column by column instead of row by row
-    %cls1Q1 = zeros(length(class_1_row));
-    %cls1Q2 = zeros(length(class_1_row));
-    %cls1Q4 = zeros(length(class_1_row));
+    cls1Q1 = zeros(length(class_1_row));
+    cls1Q2 = zeros(length(class_1_row));
+    cls1Q4 = zeros(length(class_1_row));
     %q = 1;
     %for j = [class_1_row'; class_1_col']
     %    cls1Q1(q) = quadrant_image(j(1), j(2));

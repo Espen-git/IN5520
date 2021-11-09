@@ -19,7 +19,7 @@ p_mosaic3 = padarray(mosaic3_test,[d d],'symmetric','both');
 %%
 G = 16;
 
-%% Compute glcms for d1
+%% Compute glcms for d1 and d2
 % Reusing code from project 1
 glcms1 = zeros(3, G, G);
 glcms2 = zeros(3, G, G);
@@ -90,36 +90,3 @@ for i = 1:6
     imshow(image); 
     title(titles(i));
 end
-
-%% Test
-images = quadrants_mosaic1(1,:,1); 
-images(:,:,2) = quadrants_mosaic1(1,:,2); 
-images(:,:,3) = quadrants_mosaic1(1,:,3); 
-images(:,:,4) = quadrants_mosaic1(1,:,4); 
-titles = {'d1 Q1','d1 Q2','d1 Q3','d1 Q4'};
-figure;
-for i = 1:4
-    image = images(:,:,i);
-    image = uint8(255 * mat2gray(image));
-    image = reshape(image, [512, 512]).';
-    subplot(2,2,i);
-    imshow(image);
-    title(titles(i));
-end
-sgtitle('dx=1, dy=0')
-
-images = quadrants_mosaic1(2,:,1); 
-images(:,:,2) = quadrants_mosaic1(2,:,2); 
-images(:,:,3) = quadrants_mosaic1(2,:,3); 
-images(:,:,4) = quadrants_mosaic1(2,:,4); 
-titles = {'d2 Q1','d2 Q2','d2 Q3','d2 Q4'};
-figure;
-for i = 1:4
-    image = images(:,:,i);
-    image = uint8(255 * mat2gray(image));
-    image = reshape(image, [512, 512]).';
-    subplot(2,2,i);
-    imshow(image);
-    title(titles(i));
-end
-sgtitle('dx=0, dy=-1')
