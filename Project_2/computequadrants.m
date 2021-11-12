@@ -1,11 +1,19 @@
-function [Q1, Q2, Q3, Q4] = computequadrants(glcm)
+function [Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8] = computequadrants(glcm)
     q1 = sum(glcm(1:8,1:8),'all');
     q2 = sum(glcm(1:8,9:16),'all');
     q3 = sum(glcm(9:16,1:8),'all');
     q4 = sum(glcm(9:16,9:16),'all');
+    q5 = sum(glcm(1:4,1:4),'all');
+    q6 = sum(glcm(1:4,5:8),'all');
+    q7 = sum(glcm(5:8,1:4),'all');
+    q8 = sum(glcm(5:8,5:8),'all');
     total_sum = q1 + q2 + q3 + q4;
     Q1 = q1/total_sum;
     Q2 = q2/total_sum;
     Q3 = q3/total_sum;
     Q4 = q4/total_sum;
+    Q5 = q5/total_sum;
+    Q6 = q6/total_sum;
+    Q7 = q7/total_sum;
+    Q8 = q8/total_sum;
 end

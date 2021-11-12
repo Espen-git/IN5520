@@ -2,8 +2,11 @@ clear all;
 
 folder_name = 'oblig2-matlab\';
 mosaic1_train = load(append(folder_name, 'mosaic1_train')).mosaic1_train;
+mosaic1_train = histeq(uint8(255 * mat2gray(mosaic1_train))); % Convert and equalize histogram
 mosaic2_test = load(append(folder_name, 'mosaic2_test')).mosaic2_test;
+mosaic2_test = histeq(uint8(255 * mat2gray(mosaic2_test))); % Convert and equalize histogram
 mosaic3_test = load(append(folder_name, 'mosaic3_test')).mosaic3_test;
+mosaic3_test = histeq(uint8(255 * mat2gray(mosaic3_test))); % Convert and equalize histogram
 mask_mosaic2_test = load(append(folder_name, 'mask_mosaic2_test')).mosaic2_test;
 mask_mosaic3_test = load(append(folder_name, 'mask_mosaic3_test')).mosaic3_test;
 training_mask = load(append(folder_name, 'training_mask')).training_mask;

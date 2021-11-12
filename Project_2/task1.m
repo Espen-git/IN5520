@@ -4,7 +4,7 @@ load_data
 %% Show pictures
 close all;
 figure;
-imshow(mosaic1_train,[]);
+imshow(mosaic1_train);
 figure;
 imshow(mosaic2_test,[]);
 figure;
