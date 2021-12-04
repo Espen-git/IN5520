@@ -94,23 +94,21 @@ images(:,:,2) = quadrants_mosaic1(1,:,2); % d1 Q2
 images(:,:,3) = quadrants_mosaic1(1,:,4); % d1 Q4
 images(:,:,4) = quadrants_mosaic1(1,:,5); % d1 Q5
 images(:,:,5) = quadrants_mosaic1(1,:,6); % d1 Q6
-images(:,:,6) = quadrants_mosaic1(1,:,7); % d1 Q7
-images(:,:,7) = quadrants_mosaic1(1,:,8); % d1 Q8
 
-images(:,:,8) = quadrants_mosaic1(2,:,1); % d2 Q1
-images(:,:,9) = quadrants_mosaic1(2,:,2); % d2 Q2
-images(:,:,10) = quadrants_mosaic1(2,:,4); % d2 Q4
-images(:,:,11) = quadrants_mosaic1(2,:,5); % d2 Q5
-images(:,:,12) = quadrants_mosaic1(2,:,6); % d2 Q6
-images(:,:,13) = quadrants_mosaic1(2,:,7); % d2 Q7
-images(:,:,14) = quadrants_mosaic1(2,:,8); % d2 Q8
-titles = {'d1 Q1','d1 Q2','d1 Q4','d1 Q5','d1 Q6','d1 Q7','d1 Q8','d2 Q1','d2 Q2','d2 Q4','d2 Q5','d2 Q6','d2 Q7','d2 Q8'};
+images(:,:,6) = quadrants_mosaic1(2,:,1); % d2 Q1
+images(:,:,8) = quadrants_mosaic1(2,:,4); % d2 Q4
+images(:,:,9) = quadrants_mosaic1(2,:,5); % d2 Q5
+images(:,:,10) = quadrants_mosaic1(2,:,6); % d2 Q6
+
+titles = {'d1 Q1','d1 Q2','d1 Q4','d1 Q5','d1 Q6','d2 Q1',' ','d2 Q4','d2 Q5','d2 Q6'};
 figure;
-for i = 1:14
+for i = 1:10
     image = images(:,:,i);
     image = uint8(255 * mat2gray(image));
     image = reshape(image, [512, 512]).'; % transpose because reshape creates column by column instead of row by row
-    subplot(2,7,i);
-    imshow(image); 
-    title(titles(i));
+    if i ~= 7
+        subplot(2,5,i);
+        imshow(image); 
+        title(titles(i));
+    end
 end
